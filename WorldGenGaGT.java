@@ -1,4 +1,4 @@
-package bloodasp.GalacticGreg;
+package bloodasp.galacticgreg;
 
 import gregapi.config.Config;
 import gregapi.config.ConfigCategories;
@@ -14,31 +14,30 @@ public class WorldGenGaGT implements Runnable {
 		new GT_Worldgenerator_Space();
 
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.copper", true, 60, 120, 32, true, true, true, MT.Cu);
+	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.chalcopyrite", true, 60, 120, 16, true, true, true, MT.Chalcopyrite);
+	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.cassiterite", true, 60, 120, 16, true, true, true, MT.Cassiterite);
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.tin", true, 60, 120, 32, true, true, true, MT.Sn);
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.bismuth", true, 80, 120, 8, true, true, false, MT.Bi);
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.coal", true, 60, 100, 24, false, false, false, MT.Coal);
-		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.iron", true, 40, 80, 16, true, true, true, MT.Fe);
-		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.lead", true, 40, 80, 16, true, true, true, MT.Pb);
+		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.magnetite", true, 40, 80, 12, true, true, true, MT.Magnetite);
+	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.bandediron", true, 40, 80, 12, true, true, true, MT.BandedIron);
+	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.sphalerite", true, 30, 60, 8, true, true, true, MT.Sphalerite);
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.zinc", true, 30, 60, 12, true, true, true, MT.Zn);
+		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.galena", true, 40, 80, 8, true, true, true, MT.Galena);
+		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.lead", true, 40, 80, 8, true, true, true, MT.Pb);
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.gold", true, 20, 40, 8, true, true, true, MT.Au);
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.silver", true, 20, 40, 8, true, true, true, MT.Ag);
-		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.nickel", true, 20, 40, 8, true, true, true, MT.Ni);
+	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.garnierite", true, 20, 40, 4, true, true, true, MT.Garnierite);
+	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.pentlandite", true, 20, 40, 4, true, true, true, MT.Pentlandite);
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.lapis", true, 20, 40, 4, true, false, false, MT.Lapis);
-		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.diamond", true, 5, 10, 2, true, true, false, MT.Diamond);
-		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.redstone", true, 5, 20, 8, true, true, false, MT.Redstone);
-		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.platinum", true, 20, 40, 8, false, true, true, MT.Platinum);
-		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.iridium", true, 20, 40, 8, false, true, true, MT.Iridium);
-		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.netherquartz", true, 30, 120, 64, false, false, false, MT.NetherQuartz);
-		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.saltpeter", true, 10, 60, 8, false, false, false, MT.Saltpeter);
-		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.sulfur_n", true, 10, 60, 32, false, false, false, MT.S);
-		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.sulfur_o", true, 5, 15, 8, false, false, false, MT.S);
-
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.graphite", true, 5, 10, 2, true, true, false, MT.Graphite);
+		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.diamond", true, 5, 10, 2, true, true, false, MT.Diamond);
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.emerald", true, 5, 250, 1, true, true, false, MT.Emerald);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.ruby", true, 5, 250, 1, true, true, false, MT.Ruby);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.sapphire", true, 5, 250, 1, true, true, false, MT.Sapphire);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.greensapphire", true, 5, 250, 1, true, true, false, MT.GreenSapphire);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.olivine", true, 5, 250, 1, true, true, false, MT.Olivine);
+	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.craponite", true, 5, 250, 1, true, true, true, MT.Craponite);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.topaz", true, 5, 250, 1, true, true, false, MT.Topaz);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.tanzanite", true, 5, 250, 1, true, true, false, MT.Tanzanite);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.amethyst", true, 5, 250, 1, true, true, false, MT.Amethyst);
@@ -49,12 +48,21 @@ public class WorldGenGaGT implements Runnable {
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.foolsruby", true, 5, 250, 1, true, true, false, MT.FoolsRuby);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.garnetred", true, 5, 250, 1, true, true, false, MT.GarnetRed);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.garnetyellow", true, 5, 250, 1, true, true, false, MT.GarnetYellow);
+	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.redstone", true, 5, 20, 8, true, true, false, MT.Redstone);
+		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.platinum", true, 20, 40, 8, false, true, true, MT.Platinum);
+		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.cooperite", true, 20, 40, 6, false, false, true, MT.Pt);
+		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.iridium", true, 20, 40, 8, false, true, true, MT.Iridium);
+		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.netherquartz", true, 30, 120, 64, false, false, false, MT.NetherQuartz);
+		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.saltpeter", true, 10, 60, 8, false, false, false, MT.Saltpeter);
+		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.sulfur_n", true, 10, 60, 32, false, false, false, MT.S);
+		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.sulfur_o", true, 5, 15, 8, false, false, false, MT.S);
+
 				int f = 0;
 		for (int j = GregTech_API.sWorldgenFile.get("worldgen", "AmountOfCustomSmallOreSlots", 16L); f < j; f++) {
 			new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.custom." + (f < 10 ? "0" : "") + f, false, 0, 0, 0, false, false, false, MT.NULL);
 		}
 		
-	    new GT_Worldgen_GT_Ore_Bedrock("ore.bedrock.bauxite", true, 5, true, true, MT.Bauxite);
+	    new GT_Worldgen_GT_Ore_Bedrock("ore.bedrock.bauxite", true, 10000, true, true, MT.Bauxite);
 	    new GT_Worldgen_GT_Ore_Bedrock("ore.bedrock.cassiterite", true, 10000, true, true, MT.Cassiterite);
 	    new GT_Worldgen_GT_Ore_Bedrock("ore.bedrock.chalcopyrite", true, 10000, true, true, MT.Chalcopyrite);
 	    new GT_Worldgen_GT_Ore_Bedrock("ore.bedrock.saltpeter", true, 15000, true, true, MT.Saltpeter);
@@ -80,15 +88,15 @@ public class WorldGenGaGT implements Runnable {
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.naquadah", false, 10, 60, 10, 5, 32, false, true, true, true, MT.Nq, MT.Nq, MT.Nq, MT.Nq_528);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.lignite", true, 50, 130, 160, 8, 32, false, false, false,false, MT.Lignite, MT.Lignite, MT.Lignite, MT.Coal);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.coal", true, 50, 80, 80, 6, 32, false, false, false, false, MT.Coal, MT.Coal, MT.Coal, MT.Lignite);
-		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.magnetite", true, 50, 120, 160, 3, 32, true, true, false, false, MT.Magnetite, MT.Magnetite, MT.Fe, MT.VanadiumMagnetite);
+		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.magnetite", true, 50, 120, 160, 3, 32, true, true, false, false, MT.Magnetite, MT.Magnetite, MT.BandedIron, MT.VanadiumMagnetite);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.gold", true, 60, 80, 160, 3, 32, true, true, false, true, MT.Magnetite, MT.Magnetite, MT.VanadiumMagnetite, MT.Au);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.iron", true, 10, 40, 120, 4, 24, true, true, false, false, MT.BrownLimonite, MT.YellowLimonite, MT.BandedIron, MT.Malachite);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.cassiterite", true, 40, 120, 50, 5, 24, true, true, false,true, MT.Sn, MT.Sn, MT.Cassiterite, MT.Sn);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.tetrahedrite", true, 80, 120, 70, 4, 24, true, true, false, true, MT.Tetrahedrite, MT.Tetrahedrite, MT.Cu, MT.Stibnite);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.netherquartz", true, 40, 80, 80, 5, 24, false, false, false,false, MT.NetherQuartz, MT.NetherQuartz, MT.NetherQuartz, MT.NetherQuartz);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.sulfur", true, 5, 20, 100, 5, 24, false, true, false, false, MT.S, MT.S, MT.Pyrite, MT.Sphalerite);
-		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.copper", true, 10, 30, 80, 4, 24, true, true, false, false, MT.Chalcopyrite, MT.Fe, MT.Pyrite, MT.Cu);
-		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.bauxite", true, 50, 90, 80, 4, 24, true, true, false, true, MT.Bauxite, MT.Bauxite, MT.Al, MT.Ilmenite);
+		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.copper", true, 10, 30, 80, 4, 24, true, true, false, false, MT.Chalcopyrite, MT.BandedIron, MT.Pyrite, MT.Cu);
+		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.bauxite", true, 50, 90, 80, 4, 24, true, true, false, true, MT.Bauxite, MT.Bauxite, MT.Bauxite, MT.Ilmenite);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.salts", true, 50, 60, 50, 3, 24, true, false, false, false, MT.RockSalt, MT.Salt, MT.Lepidolite, MT.Spodumene);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.redstone", true, 10, 40, 60, 3, 24, true, true, false, true, MT.Redstone, MT.Redstone, MT.Ruby, MT.Cinnabar);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.soapstone", true, 10, 40, 40, 3, 16, true, true, false, false, MT.Soapstone, MT.Talc, MT.Glauconite, MT.Pentlandite);

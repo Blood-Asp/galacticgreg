@@ -1,4 +1,4 @@
-package bloodasp.GalacticGreg;
+package bloodasp.galacticgreg;
 
 import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.eventhandler.EventBus;
@@ -112,8 +112,8 @@ public class GT_Worldgenerator_Space extends Worldgenerator {
 									betweenMeta = tWorldGen.mBetweenMeta;
 									sporadicMeta = tWorldGen.mSporadicMeta;
 									temp = false;
-									break;
 								}
+								break;
 							} catch (Throwable e) {
 								e.printStackTrace(GT_Log.err);
 							}

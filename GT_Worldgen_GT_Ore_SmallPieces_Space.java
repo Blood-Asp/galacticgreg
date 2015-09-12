@@ -1,4 +1,4 @@
-package bloodasp.GalacticGreg;
+package bloodasp.galacticgreg;
 
 import gregapi.block.IBlockPlacable;
 import gregapi.code.ItemStackContainer;

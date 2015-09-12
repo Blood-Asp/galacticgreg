@@ -1,4 +1,4 @@
-package bloodasp.GalacticGreg;
+package bloodasp.galacticgreg;
 
 import gregapi.old.GregTech_API;
 import gregapi.old.GT_Worldgen_Ore;
