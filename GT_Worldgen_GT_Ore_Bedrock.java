@@ -26,13 +26,13 @@ public class GT_Worldgen_GT_Ore_Bedrock
   public GT_Worldgen_GT_Ore_Bedrock(String aName, boolean aDefault, int aProbability, boolean aMoon, boolean aMars, OreDictMaterial aPrimary)
   {
 	this.mWorldGenName = aName;
-    this.mProbability = Math.max(1, GregTech_API.sWorldgenFile.get("worldgen." + this.mWorldGenName, "Probability", aProbability));
-    this.mMaterial = OreDictMaterial.get(GregTech_API.sWorldgenFile.get("worldgen." + this.mWorldGenName, "Ore", aPrimary.mNameInternal));
+    this.mProbability = Math.max(1, CS.ConfigsGT.WORLDGEN.get("worldgen." + this.mWorldGenName, "Probability", (long)aProbability));
+    this.mMaterial = OreDictMaterial.get(CS.ConfigsGT.WORLDGEN.get("worldgen." + this.mWorldGenName, "Ore", aPrimary.mNameInternal));
 	
 	
 	
-    this.mMoon = GregTech_API.sWorldgenFile.get("worldgen." + this.mWorldGenName, "Moon", aMoon);
-    this.mMars = GregTech_API.sWorldgenFile.get("worldgen." + this.mWorldGenName, "Mars", aMars);
+    this.mMoon = CS.ConfigsGT.WORLDGEN.get("worldgen." + this.mWorldGenName, "Moon", aMoon);
+    this.mMars = CS.ConfigsGT.WORLDGEN.get("worldgen." + this.mWorldGenName, "Mars", aMars);
     
 	for (WorldgenObject tWorldGen : Worldgenerator.sWorldgenList){
 		if(tWorldGen.mWorldGenName.equals(aName)){

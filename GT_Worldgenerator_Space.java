@@ -62,14 +62,14 @@ public class GT_Worldgenerator_Space extends Worldgenerator {
 	private boolean gcAsteroids = true;
 
 	public GT_Worldgenerator_Space() {
-		endAsteroids = GregTech_API.sWorldgenFile.get("galacticgreg", "GenerateAsteroidsInEnd", true);
-		gcAsteroids = GregTech_API.sWorldgenFile.get("galacticgreg", "GenerateAsteroidsInGC", true);
-		endMinSize = GregTech_API.sWorldgenFile.get("galacticgreg", "EndAsteroidMinSize", 50L);
-		endMaxSize = GregTech_API.sWorldgenFile.get("galacticgreg", "EndAsteroidMaxSize", 200L);
-		minSize = GregTech_API.sWorldgenFile.get("galacticgreg", "AsteroidMinSize", 100L);
-		maxSize = GregTech_API.sWorldgenFile.get("galacticgreg", "AsteroidMaxSize", 400L);
-		mAsteroidProbability = GregTech_API.sWorldgenFile.get("galacticgreg", "AsteroidProbability", 50L);
-		mEndAsteroidProbability = GregTech_API.sWorldgenFile.get("galacticgreg", "EndAsteroidProbability", 300L);
+		endAsteroids = CS.ConfigsGT.WORLDGEN.get("galacticgreg", "GenerateAsteroidsInEnd", true);
+		gcAsteroids = CS.ConfigsGT.WORLDGEN.get("galacticgreg", "GenerateAsteroidsInGC", true);
+		endMinSize = CS.ConfigsGT.WORLDGEN.get("galacticgreg", "EndAsteroidMinSize", 50L);
+		endMaxSize = CS.ConfigsGT.WORLDGEN.get("galacticgreg", "EndAsteroidMaxSize", 200L);
+		minSize = CS.ConfigsGT.WORLDGEN.get("galacticgreg", "AsteroidMinSize", 100L);
+		maxSize = CS.ConfigsGT.WORLDGEN.get("galacticgreg", "AsteroidMaxSize", 400L);
+		mAsteroidProbability = CS.ConfigsGT.WORLDGEN.get("galacticgreg", "AsteroidProbability", 50L);
+		mEndAsteroidProbability = CS.ConfigsGT.WORLDGEN.get("galacticgreg", "EndAsteroidProbability", 300L);
 		GameRegistry.registerWorldGenerator(this, 1073741923);
 	}
 
@@ -195,7 +195,7 @@ public class GT_Worldgenerator_Space extends Worldgenerator {
 		String aDimName = aWorld.provider.getDimensionName();
 		Boolean tAllowed = mDimensionMap.get(aDimName);
 		if (tAllowed == null) {
-			boolean tValue = GregTech_API.sWorldgenFile.get("worldgen.dimensions."+mWorldGenName, aDimName.replaceAll(" ", "_"), aDimensionType == aAllowedDimensionType);
+			boolean tValue = CS.ConfigsGT.WORLDGEN.get("worldgen.dimensions."+mWorldGenName, aDimName.replaceAll(" ", "_"), aDimensionType == aAllowedDimensionType);
 			mDimensionMap.put(aDimName, tValue);
 			return tValue;
 		}

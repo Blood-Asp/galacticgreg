@@ -32,14 +32,14 @@ public class GT_Worldgen_GT_Ore_SmallPieces_Space
 
 	public GT_Worldgen_GT_Ore_SmallPieces_Space(String aName, boolean aDefault, int aMinY, int aMaxY, int aAmount, boolean aMoon, boolean aMars, boolean aEnd, OreDictMaterial aPrimary) {
 		this.mWorldGenName = aName;
-		this.mMinY = ((short) GregTech_API.sWorldgenFile.get("worldgen." + this.mWorldGenName, "MinHeight", aMinY));
-		this.mMaxY = ((short) Math.max(this.mMinY + 1, GregTech_API.sWorldgenFile.get("worldgen." + this.mWorldGenName, "MaxHeight", aMaxY)));
-		this.mAmount = ((short) Math.max(1, GregTech_API.sWorldgenFile.get("worldgen." + this.mWorldGenName, "Amount", aAmount)));
-	    this.mMeta = OreDictMaterial.get(GregTech_API.sWorldgenFile.get("worldgen." + this.mWorldGenName, "Ore", aPrimary.mNameInternal)).mID;
+		this.mMinY = ((short) CS.ConfigsGT.WORLDGEN.get("worldgen." + this.mWorldGenName, "MinHeight",(long) aMinY));
+		this.mMaxY = ((short) Math.max(this.mMinY + 1, CS.ConfigsGT.WORLDGEN.get("worldgen." + this.mWorldGenName, "MaxHeight",(long) aMaxY)));
+		this.mAmount = ((short) Math.max(1, CS.ConfigsGT.WORLDGEN.get("worldgen." + this.mWorldGenName, "Amount", (long)aAmount)));
+	    this.mMeta = OreDictMaterial.get(CS.ConfigsGT.WORLDGEN.get("worldgen." + this.mWorldGenName, "Ore", aPrimary.mNameInternal)).mID;
 	    
 	    
-	    this.mMoon = GregTech_API.sWorldgenFile.get("worldgen." + this.mWorldGenName, "Moon", aMoon);
-		this.mMars = GregTech_API.sWorldgenFile.get("worldgen." + this.mWorldGenName, "Mars", aMars);
+	    this.mMoon = CS.ConfigsGT.WORLDGEN.get("worldgen." + this.mWorldGenName, "Moon", aMoon);
+		this.mMars = CS.ConfigsGT.WORLDGEN.get("worldgen." + this.mWorldGenName, "Mars", aMars);
 		
 		for (WorldgenObject tWorldGen : Worldgenerator.sWorldgenList){
 			if(tWorldGen.mWorldGenName.equals(aName)){

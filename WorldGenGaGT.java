@@ -3,6 +3,7 @@ package bloodasp.galacticgreg;
 import gregapi.config.Config;
 import gregapi.config.ConfigCategories;
 import gregapi.data.CS.BlocksGT;
+import gregapi.data.CS;
 import gregapi.data.MT;
 import gregapi.old.GregTech_API;
 import cpw.mods.fml.common.Loader;
@@ -58,7 +59,7 @@ public class WorldGenGaGT implements Runnable {
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.sulfur_o", true, 5, 15, 8, false, false, false, MT.S);
 
 				int f = 0;
-		for (int j = GregTech_API.sWorldgenFile.get("worldgen", "AmountOfCustomSmallOreSlots", 16L); f < j; f++) {
+		for (int j = CS.ConfigsGT.WORLDGEN.get("worldgen", "AmountOfCustomSmallOreSlots", 16L); f < j; f++) {
 			new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.custom." + (f < 10 ? "0" : "") + f, false, 0, 0, 0, false, false, false, MT.NULL);
 		}
 		
@@ -81,7 +82,7 @@ public class WorldGenGaGT implements Runnable {
 	    new GT_Worldgen_GT_Ore_Bedrock("ore.bedrock.uraninite", true, 150000, true, true, MT.Uraninite);
 		
 		int g = 0;
-	    for (int j = GregTech_API.sWorldgenFile.get("worldgen", "AmountOfCustomBedrockOreSlots", 16L); g < j; g++) {
+	    for (int j = CS.ConfigsGT.WORLDGEN.get("worldgen", "AmountOfCustomBedrockOreSlots", 16L); g < j; g++) {
 	      new GT_Worldgen_GT_Ore_Bedrock("ore.bedrock.custom." + (g < 10 ? "0" : "") + g, false, 100000, false, false, MT.NULL);
 	    }
 
@@ -118,7 +119,7 @@ public class WorldGenGaGT implements Runnable {
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.beryllium", true, 5, 30, 30, 3, 16, true, true, true, true, MT.Be, MT.Be, MT.Emerald, MT.Th);
 
 		int i = 0;
-		for (int j = GregTech_API.sWorldgenFile.get("worldgen", "AmountOfCustomLargeVeinSlots", 16L); i < j; i++) {
+		for (int j = CS.ConfigsGT.WORLDGEN.get("worldgen", "AmountOfCustomLargeVeinSlots", 16L); i < j; i++) {
 			new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.custom." + (i < 10 ? "0" : "") + i, false, 0, 0, 0, 0, 0, false, false, false, false, MT.NULL, MT.NULL, MT.NULL, MT.NULL);
 		}
 	}
