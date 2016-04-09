@@ -1,8 +1,9 @@
-package bloodasp.galacticgreg;
+package bloodasp.GalacticGreg;
 
 import gregapi.old.GregTech_API;
 import gregapi.old.GT_Worldgen_Ore;
 import gregapi.block.prefixblock.PrefixBlockTileEntity;
+import gregapi.data.CS;
 
 import java.util.Collection;
 import java.util.Random;
@@ -66,7 +67,7 @@ public class GT_Worldgen_Stone_Space
                       if (var39 * var39 + var42 * var42 + var45 * var45 < 1.0D)
                       {
                         Block tTargetedBlock = aWorld.getBlock(eX, eY, eZ);
-                        if (tTargetedBlock == GregTech_API.sBlockOres1)
+                        if (tTargetedBlock == CS.BlocksGT.ore)//GregTech_API.sBlockOres1)
                         {
                           TileEntity tTileEntity = aWorld.getTileEntity(eX, eY, eZ);
                           if ((tTileEntity instanceof PrefixBlockTileEntity)) {

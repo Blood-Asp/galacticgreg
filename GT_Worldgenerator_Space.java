@@ -1,4 +1,4 @@
-package bloodasp.galacticgreg;
+package bloodasp.GalacticGreg;
 
 import cpw.mods.fml.common.IWorldGenerator;
 import cpw.mods.fml.common.eventhandler.EventBus;

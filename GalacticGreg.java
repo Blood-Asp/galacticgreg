@@ -1,4 +1,4 @@
-package bloodasp.galacticgreg;
+package bloodasp.GalacticGreg;
 
 import java.util.ArrayList;
 import java.util.List;

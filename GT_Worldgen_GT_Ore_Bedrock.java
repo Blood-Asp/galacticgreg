@@ -1,4 +1,4 @@
-package bloodasp.galacticgreg;
+package bloodasp.GalacticGreg;
 
 import gregapi.block.prefixblock.PrefixBlock;
 import gregapi.config.Config;
