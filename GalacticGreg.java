@@ -34,7 +34,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = GalacticGreg.MODID, version = GalacticGreg.VERSION, dependencies = "required-after:GalacticraftCore; required-after:gregapi; required-after:gregtech; required-after:GalacticraftMars;")
 public class GalacticGreg {
 	public static final String MODID = "galacticgreg";
-	public static final String VERSION = "1.9";
+	public static final String VERSION = "1.10";
 	public static final List<WorldgenObject> sWorldgenList = new ArrayListNoNulls();
 	public Block GCMoonBlock;
 	public Block GCMarsBlock;
@@ -90,7 +90,7 @@ public class GalacticGreg {
 	}
 	
 	public PrefixBlock doCreatePBlock(String aName,OreDictPrefix aPrefix, Drops aDrops,ITexture aTexture){
-		return new PrefixBlock("gregtech", "gregtech", aName, aPrefix, null, null, aDrops, aTexture, Material.rock, Block.soundTypeStone, "pickaxe", 1.0F, 1.0F, 0, 0, 999, false, false, false, false, true, true, false, false,true,true,true,false,false,false);
+		return new PrefixBlock("gregtech", "gregtech", aName, aPrefix, null, null, aDrops, aTexture, Material.rock, Block.soundTypeStone, "pickaxe", 1.0F, 1.0F, 0, 0, 999, 0, 0, 0, 1, 1, 1, false, false, false, false, true, true, false, false,true,true,true,false,false,false);
 	}
 
 	@Mod.EventHandler
