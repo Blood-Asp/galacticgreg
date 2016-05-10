@@ -17,7 +17,6 @@ import gregapi.data.CS;
 import gregapi.data.MT;
 import gregapi.data.OP;
 import gregapi.worldgen.WorldgenObject;
-import gregapi.old.GregTech_API;
 import gregapi.oredict.OreDictManager;
 import gregapi.oredict.OreDictMaterial;
 import gregapi.oredict.OreDictPrefix;
@@ -25,7 +24,8 @@ import gregapi.recipes.GT_ModHandler;
 import gregapi.render.BlockTextureCopied;
 import gregapi.render.ITexture;
 import gregapi.block.prefixblock.PrefixBlock;
-import gregapi.block.prefixblock.PrefixBlock.Drops;
+import gregapi.block.behaviors.Drops;
+import gregapi.block.behaviors.Drops_SmallOre;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLLoadEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -48,43 +48,43 @@ public class GalacticGreg {
 		PrefixBlock broken;
 		if(GCMoonBlock!=null){
 			broken = doCreatePBlock("gg.meta.ore.broken.moon", OP.ore,  null, new BlockTextureCopied(GCMoonBlock, 6, 4));
-			PrefixBlock tmp = doCreatePBlock("gg.meta.ore.normal.gc.stone." + 0, OP.ore, new PrefixBlock.Drops(broken), new BlockTextureCopied(GCMoonBlock, 6, 4));
+			PrefixBlock tmp = doCreatePBlock("gg.meta.ore.normal.gc.stone." + 0, OP.ore, new Drops(broken), new BlockTextureCopied(GCMoonBlock, 6, 4));
 			CS.BlocksGT.stoneToNormalOres.put(new ItemStackContainer(GCMoonBlock, 1L, 4), tmp);
 			CS.BlocksGT.stoneToBrokenOres.put(new ItemStackContainer(GCMoonBlock, 1L, 4), broken);
-			tmp = doCreatePBlock("gg.meta.ore.small.gc.stone." + 0, OP.oreSmall,  new PrefixBlock.Drops_Small_Ore(MT.Stone), new BlockTextureCopied(GCMoonBlock, 6, 4));
+			tmp = doCreatePBlock("gg.meta.ore.small.gc.stone." + 0, OP.oreSmall,  new Drops_SmallOre(MT.Stone), new BlockTextureCopied(GCMoonBlock, 6, 4));
 			CS.BlocksGT.stoneToSmallOres.put(new ItemStackContainer(GCMoonBlock, 1L, 4), tmp);//moonrock meta4
 		
 			broken = doCreatePBlock("gg.meta.ore.broken.moon2", OP.ore,  null, new BlockTextureCopied(GCMoonBlock, 6, 3));
-			tmp = doCreatePBlock("gg.meta.ore.normal.gc.stone2." + 0, OP.ore,  new PrefixBlock.Drops(broken), new BlockTextureCopied(GCMoonBlock, 6, 3));
+			tmp = doCreatePBlock("gg.meta.ore.normal.gc.stone2." + 0, OP.ore,  new Drops(broken), new BlockTextureCopied(GCMoonBlock, 6, 3));
 			CS.BlocksGT.stoneToNormalOres.put(new ItemStackContainer(GCMoonBlock, 1L, 3), tmp);
 			CS.BlocksGT.stoneToBrokenOres.put(new ItemStackContainer(GCMoonBlock, 1L, 3), broken);
-			tmp = doCreatePBlock("gg.meta.ore.small.gc.stone2." + 0, OP.oreSmall,  new PrefixBlock.Drops_Small_Ore(MT.Stone), new BlockTextureCopied(GCMoonBlock, 6, 3));
+			tmp = doCreatePBlock("gg.meta.ore.small.gc.stone2." + 0, OP.oreSmall,  new Drops_SmallOre(MT.Stone), new BlockTextureCopied(GCMoonBlock, 6, 3));
 			CS.BlocksGT.stoneToSmallOres.put(new ItemStackContainer(GCMoonBlock, 1L, 3), tmp);//moonrock meta3
 		
 		}
 		
 		    if(GCMarsBlock!=null){
 			broken = doCreatePBlock("gg.meta.ore.broken.mars", OP.ore,  null, new BlockTextureCopied(GCMarsBlock, 6, 9));
-			PrefixBlock tmp = doCreatePBlock("gg.meta.ore.normal.gc.stone." + 1, OP.ore,  new PrefixBlock.Drops(broken), new BlockTextureCopied(GCMarsBlock, 6, 9));
+			PrefixBlock tmp = doCreatePBlock("gg.meta.ore.normal.gc.stone." + 1, OP.ore,  new Drops(broken), new BlockTextureCopied(GCMarsBlock, 6, 9));
 			CS.BlocksGT.stoneToNormalOres.put(new ItemStackContainer(GCMarsBlock, 1L, 9), tmp);
 			CS.BlocksGT.stoneToBrokenOres.put(new ItemStackContainer(GCMarsBlock, 1L, 9), broken);
-			tmp = doCreatePBlock("gg.meta.ore.small.gc.stone." + 1, OP.oreSmall,  new PrefixBlock.Drops_Small_Ore(MT.Stone), new BlockTextureCopied(GCMarsBlock, 6, 9));
+			tmp = doCreatePBlock("gg.meta.ore.small.gc.stone." + 1, OP.oreSmall,  new Drops_SmallOre(MT.Stone), new BlockTextureCopied(GCMarsBlock, 6, 9));
 			CS.BlocksGT.stoneToSmallOres.put(new ItemStackContainer(GCMarsBlock, 1L, 9), tmp);//marsstone meta9
 		
 			broken = doCreatePBlock("gg.meta.ore.broken.mars2", OP.ore,  null, new BlockTextureCopied(GCMarsBlock, 6, 6));
-			tmp = doCreatePBlock("gg.meta.ore.normal.gc.stone2." + 1, OP.ore,  new PrefixBlock.Drops(broken), new BlockTextureCopied(GCMarsBlock, 6, 6));
+			tmp = doCreatePBlock("gg.meta.ore.normal.gc.stone2." + 1, OP.ore,  new Drops(broken), new BlockTextureCopied(GCMarsBlock, 6, 6));
 			CS.BlocksGT.stoneToNormalOres.put(new ItemStackContainer(GCMarsBlock, 1L, 6), tmp);
 			CS.BlocksGT.stoneToBrokenOres.put(new ItemStackContainer(GCMarsBlock, 1L, 6), broken);
-			tmp = doCreatePBlock("gg.meta.ore.small.gc.stone2." + 1, OP.oreSmall,  new PrefixBlock.Drops_Small_Ore(MT.Stone), new BlockTextureCopied(GCMarsBlock, 6, 6));
+			tmp = doCreatePBlock("gg.meta.ore.small.gc.stone2." + 1, OP.oreSmall,  new Drops_SmallOre(MT.Stone), new BlockTextureCopied(GCMarsBlock, 6, 6));
 			CS.BlocksGT.stoneToSmallOres.put(new ItemStackContainer(GCMarsBlock, 1L, 6), tmp);//marsstone meta6
 		
 		    }
 		if(GCAsteroidBlock!=null){
 			broken = doCreatePBlock("gg.meta.ore.broken.asteroid", OP.ore,  null, new BlockTextureCopied(GCAsteroidBlock, 6, 2));
-			PrefixBlock tmp = doCreatePBlock("gg.meta.ore.normal.gc.stone." + 2, OP.ore,  new PrefixBlock.Drops(broken), new BlockTextureCopied(GCAsteroidBlock, 6, 2));
+			PrefixBlock tmp = doCreatePBlock("gg.meta.ore.normal.gc.stone." + 2, OP.ore,  new Drops(broken), new BlockTextureCopied(GCAsteroidBlock, 6, 2));
 			CS.BlocksGT.stoneToNormalOres.put(new ItemStackContainer(GCAsteroidBlock, 1L, 2), tmp);
 			CS.BlocksGT.stoneToBrokenOres.put(new ItemStackContainer(GCAsteroidBlock, 1L, 2), broken);
-			tmp = doCreatePBlock("gg.meta.ore.small.gc.stone." + 2, OP.oreSmall,  new PrefixBlock.Drops_Small_Ore(MT.Stone), new BlockTextureCopied(GCAsteroidBlock, 6, 2));
+			tmp = doCreatePBlock("gg.meta.ore.small.gc.stone." + 2, OP.oreSmall,  new Drops_SmallOre(MT.Stone), new BlockTextureCopied(GCAsteroidBlock, 6, 2));
 			CS.BlocksGT.stoneToSmallOres.put(new ItemStackContainer(GCAsteroidBlock, 1L, 2), tmp);//asteroid meta2
 		}
 	}

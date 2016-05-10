@@ -1,6 +1,5 @@
 package bloodasp.GalacticGreg;
 
-import gregapi.old.GregTech_API;
 import gregapi.old.GT_Worldgen_Ore;
 import gregapi.block.prefixblock.PrefixBlockTileEntity;
 import gregapi.data.CS;

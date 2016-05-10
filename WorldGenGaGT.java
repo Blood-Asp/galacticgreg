@@ -6,7 +6,6 @@ import gregapi.data.CS.BlocksGT;
 import gregapi.data.CS;
 import gregapi.data.MT;
 import gregapi.data.MT.OREMATS;
-import gregapi.old.GregTech_API;
 import cpw.mods.fml.common.Loader;
 
 public class WorldGenGaGT implements Runnable {
