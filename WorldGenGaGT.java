@@ -47,8 +47,8 @@ public class WorldGenGaGT implements Runnable {
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.bluetopaz", true, 5, 250, 1, true, true, false, MT.BlueTopaz);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.amber", true, 5, 250, 1, true, true, false, MT.Amber);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.foolsruby", true, 5, 250, 1, true, true, false, MT.FoolsRuby);
-	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.garnetred", true, 5, 250, 1, true, true, false, MT.GarnetRed);
-	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.garnetyellow", true, 5, 250, 1, true, true, false, MT.GarnetYellow);
+	    //new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.garnetred", true, 5, 250, 1, true, true, false, MT.GarnetRed);
+	    //new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.garnetyellow", true, 5, 250, 1, true, true, false, MT.GarnetYellow);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.redstone", true, 5, 20, 8, true, true, false, MT.Redstone);
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.platinum", true, 20, 40, 8, false, true, true, MT.Platinum);
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.cooperite", true, 20, 40, 6, false, false, true, MT.Pt);
@@ -107,8 +107,8 @@ public class WorldGenGaGT implements Runnable {
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.plutonium", true, 20, 30, 10, 3, 16, true, true, true, true, OREMATS.Uraninite, OREMATS.Uraninite, MT.Pu, MT.U_238);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.monazite", true, 20, 40, 30, 3, 16, true, true, true, true, OREMATS.Bastnasite, OREMATS.Bastnasite, MT.Monazite, MT.Nd);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.molybdenum", true, 20, 50, 5, 3, 16, true, true, true, true, OREMATS.Wulfenite, OREMATS.Molybdenite, MT.Mo, OREMATS.Powellite);
-		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.tungstate", true, 20, 50, 10, 3, 16, true, true, true, true, OREMATS.Scheelite, OREMATS.Scheelite, OREMATS.Tungstate, MT.Li);
-		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.sapphire", true, 10, 40, 60, 3, 16, true, true, false, true, MT.Almandine, MT.Pyrope, MT.Sapphire, MT.GreenSapphire);
+		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.tungstate", true, 20, 50, 10, 3, 16, true, true, true, true, OREMATS.Scheelite, OREMATS.Russellite, OREMATS.Tungstate, OREMATS.Pinalite);
+		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.sapphire", true, 10, 40, 60, 3, 16, true, true, false, true, MT.YellowSapphire, MT.OrangeSapphire, MT.BlueSapphire, MT.GreenSapphire);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.manganese", true, 20, 30, 20, 3, 16, true, false, true, true, MT.Grossular, MT.Spessartine, OREMATS.Pyrolusite, OREMATS.Tantalite);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.quartz", true, 40, 80, 60, 3, 16, true, true, true, true, MT.Quartzite, OREMATS.Barite, MT.CertusQuartz, MT.CertusQuartz);
 		new GT_Worldgen_GT_Ore_Layer_Space("ore.mix.diamond", true, 5, 20, 40, 2, 16, true, true, true, true, MT.Graphite, MT.Graphite, MT.Diamond, MT.Coal);
