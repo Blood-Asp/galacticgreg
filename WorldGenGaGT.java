@@ -46,9 +46,7 @@ public class WorldGenGaGT implements Runnable {
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.jasper", true, 5, 250, 1, true, true, false, MT.Jasper);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.bluetopaz", true, 5, 250, 1, true, true, false, MT.BlueTopaz);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.amber", true, 5, 250, 1, true, true, false, MT.Amber);
-	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.foolsruby", true, 5, 250, 1, true, true, false, MT.FoolsRuby);
-	    //new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.garnetred", true, 5, 250, 1, true, true, false, MT.GarnetRed);
-	    //new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.garnetyellow", true, 5, 250, 1, true, true, false, MT.GarnetYellow);
+	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.balasruby", true, 5, 250, 1, true, true, false, MT.BalasRuby);
 	    new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.redstone", true, 5, 20, 8, true, true, false, MT.Redstone);
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.platinum", true, 20, 40, 8, false, true, true, MT.Platinum);
 		new GT_Worldgen_GT_Ore_SmallPieces_Space("ore.small.cooperite", true, 20, 40, 6, false, false, true, MT.Pt);
