@@ -9,7 +9,6 @@ import gregapi.data.CS;
 import gregapi.data.CS.BlocksGT;
 import gregapi.worldgen.WorldgenObject;
 import gregapi.worldgen.Worldgen_GT_Ore_Layer;
-import gregapi.old.GregTech_API;
 import gregapi.oredict.OreDictMaterial;
 import gregapi.block.prefixblock.PrefixBlock;
 

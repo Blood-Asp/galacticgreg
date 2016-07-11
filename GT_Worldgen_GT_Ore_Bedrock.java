@@ -4,7 +4,6 @@ import gregapi.block.prefixblock.PrefixBlock;
 import gregapi.config.Config;
 import gregapi.data.CS;
 import gregapi.data.CS.BlocksGT;
-import gregapi.old.GregTech_API;
 import gregapi.oredict.OreDictMaterial;
 import gregapi.worldgen.WorldgenObject;
 import gregapi.worldgen.Worldgenerator;

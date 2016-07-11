@@ -8,11 +8,10 @@ import gregapi.block.IBlockPlacable;
 import gregapi.code.ArrayListNoNulls;
 import gregapi.code.ItemStackContainer;
 import gregapi.data.CS;
-import gregapi.log.GT_Log;
+import gregapi.log.LogBuffer;
 import gregapi.worldgen.WorldgenObject;
 import gregapi.worldgen.Worldgen_GT_Ore_Layer;
 import gregapi.worldgen.Worldgenerator;
-import gregapi.old.GregTech_API;
 import gregapi.block.prefixblock.PrefixBlock;
 
 import java.lang.reflect.Array;
@@ -115,7 +114,7 @@ public class GT_Worldgenerator_Space extends Worldgenerator {
 								}
 								break;
 							} catch (Throwable e) {
-								e.printStackTrace(GT_Log.err);
+								e.printStackTrace(CS.ERR);
 							}
 						}
 					}
